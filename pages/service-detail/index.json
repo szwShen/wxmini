@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "s-date-picker": "../components/date-picker/index",
+    "l-toast": "/miniprogram_npm/lin-ui/toast/index",
+    "s-service-introduce": "../components/service-introduce/index"
+  }
+}

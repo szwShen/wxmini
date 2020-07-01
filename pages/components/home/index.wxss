@@ -1,0 +1,115 @@
+/* pages/componnets/home/index.wxss */
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 350rpx;
+}
+
+.header image {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.head-text {
+    position: relative;
+    font-size: 52rpx;
+    margin-top: -180rpx;
+    color: blue;
+}
+
+.l-form-btn-class {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10rpx;
+}
+
+.about-us {
+    margin-top: 20rpx;
+    padding: 10rpx;
+    display: flex;
+    font-size: 16px;
+    color: #2c3036;
+    line-height: 18px;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+.about-us text {
+    background-color: #fff;
+}
+
+.fix {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.describe {
+    color: #3683d6;
+    font-size: 28rpx;
+    margin-left: 20rpx;
+}
+
+.content {
+    padding: 4%;
+    border-radius: 5rpx;
+    border: 1px solid #3363bc;
+    background-color: #f5f5f5;
+    padding: 10rpx 10rpx;
+    overflow: hidden;
+    margin: 0 10rpx;
+}
+
+.moreInf {
+
+    margin-right: 10rpx;
+    color: #3683d6;
+    font-size: 30rpx;
+    text-align: right;
+
+}
+
+.l-form-container-class {
+    box-sizing: border-box;
+    background-color: #f5f5f5 !important;
+
+    padding: 10rpx 10rpx;
+}
+
+.title {
+    border-left: 5px solid #2c3036;
+    height: 20px;
+    line-height: 20px;
+    text-indent: 10px;
+    color: #2c3036;
+    font-size: 18px;
+    margin-bottom: 10px;
+
+}
+
+.comment {
+    padding: 0 5rpx;
+    margin: 20rpx 5rpx 0;
+    background-color: #fff;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80rpx;
+    color: #fff;
+    background-color: #3363bc;
+
+}
+
+.l-input-class {
+    width: 520rpx !important;
+}
+
+.container {
+    margin-bottom: 120rpx;
+}

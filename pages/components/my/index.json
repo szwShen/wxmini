@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "s-my-banner": "../my-banner/index",
+    "s-my-order-panel": "..//my-order-panel/index"
+  }
+}

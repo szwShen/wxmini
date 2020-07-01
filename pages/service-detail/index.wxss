@@ -1,0 +1,70 @@
+.image-picker {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100rpx !important;
+  height: 200rpx !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+
+.item {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.btns {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.l-form-btn-class {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10rpx;
+}
+
+.date-btns {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 200rpx !important;
+  height: 100% !important;
+  font-size: 24rpx !important;
+  padding: 0 !important;
+  border: none !important;
+
+}
+
+.l-input-class {
+  width: 500rpx !important;
+}
+
+.l-input-class-imageContainer {
+  width: 100% !important;
+  padding: 0 !important;
+  display: flex !important;
+  height: 100% !important;
+  flex-direction: column;
+  align-items: flex-start !important;
+  justify-content: space-around !important;
+}
+
+.image-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container text {
+  align-items: center;
+  display: flex;
+  justify-content: start;
+  margin-bottom: 20rpx;
+}
+
+.submit {
+  margin-top: 10rpx;
+}

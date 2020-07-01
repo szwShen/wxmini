@@ -1,0 +1,148 @@
+
+page{
+  background:linear-gradient(180deg,rgba(50,36,174,1) 0%,rgba(179,99,209,1) 100%);
+}
+.back{
+  width: 100%;
+  overflow: hidden;
+  position: absolute;
+  background:linear-gradient(180deg,rgba(62,42,177,1) 0%,rgba(31,21,89,0) 100%);
+   opacity:1;
+}
+.backimg{
+  position: absolute;
+  z-index: -999;
+  width: 3000rpx;
+  height: 2002rpx;
+  overflow: hidden;
+   opacity: 0.3;
+  top: -450rpx;
+  left: -550rpx;
+}
+.title-img{
+  width:200rpx;
+  height:200rpx;
+  background:rgba(0,0,0,0);
+  /* box-shadow:3px 3px 10px rgba(33,16,46,0.91); */
+  opacity:1;
+  /* position: absolute; */
+  margin-top: -100rpx;
+  z-index: 999;
+}
+/*注册*/
+.container{
+ /* margin-top: 20rpx; */
+}
+.userdiv{
+    display: flex;
+    flex-flow: column;
+    /* justify-content: flex-start; */
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 20rpx;
+    color: white;
+}
+
+.userp2{
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 90rpx;
+    /* border: 2rpx solid #999999; */
+    border-radius: 20rpx;
+    margin-bottom: 50rpx;
+    z-index: 99;
+}
+.userp2 .shouji{
+  width: 40rpx;
+  height: 50rpx;
+  margin: 0 10rpx 0 15rpx;
+}
+.userp2 .xinxi{
+width: 40rpx;
+height: 50rpx;
+ margin: 0 10rpx 0 15rpx;
+}
+.userp2 label,.userp2 input[type=text]{
+    height: 90rpx;
+    font-size: 28rpx;
+    line-height: 90rpx;
+    color: #fff;
+}
+.placeholderStyle{
+  color: #fff
+}
+
+.userp2 input[type=text]{
+    flex: 1;
+    font-size: 28rpx;
+   text-indent:10rpx;
+   border-bottom: 1rpx solid #fff;
+   color: #fff;
+   opacity: 1;
+}
+
+
+.nextbtn button{
+    display: block;
+    width:640rpx;
+    height:88rpx;
+    margin: 0 auto;
+    border-radius:80rpx;
+    font-size: 26rpx;
+    line-height: 88rpx;
+    text-align: center;
+    margin-top: 50rpx;
+    background:linear-gradient(360deg,rgba(196,197,254,1) 0%,rgba(255,255,255,1) 100%);
+box-shadow:0px 0px 21rpx rgba(255,255,255,0.2);
+    border:none;
+    color: #4922EA;
+}
+
+.yanzm{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 160rpx;
+    height: 90rpx;
+    padding: 0 20rpx;
+    background: none;
+    color: #fff;
+    border-bottom: 1px solid #fff
+}
+.yanz,.yanztime{
+    width: 100%;
+    font-size: 28rpx;
+    line-height: 1.2em;
+    text-align: center;
+    justify-content: center;
+    background: none;
+    padding: 10rpx;
+    border: 1px solid #ccc;
+    opacity:1;
+    border-radius:10rpx;
+}
+
+.hidden{
+  display: none;
+}
+.weixin button{
+     margin-top: 40rpx; 
+     border: none;
+   
+}
+.weixin image{
+  height: 60px;
+  width: 60px;
+}
+.line{
+  font-size:28rpx;
+  font-family:PingFangSC-Regular;
+  color:#fff;
+  text-align: center;
+  margin-top: -30rpx;
+}

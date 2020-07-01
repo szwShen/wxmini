@@ -1,0 +1,35 @@
+<view class="container">
+				<l-form is-submit-validate="{{isSubmitValidate}}" bind:linsubmit="submit" l-form-btn-class="l-form-btn-class">
+								<l-form-item label="服务项目:" name="serviceName">
+												<l-input id="serviceName" l-class="l-input-class" disabled value="{{service.name}}" hide-label show-row="{{false}}" />
+								</l-form-item>
+								<l-form-item label="客户姓名:" name="userName" rules="{{nameRules}}">
+												<l-input id="userName" l-class="l-input-class" value="{{service.username}}" hide-label show-row="{{false}}" />
+								</l-form-item>
+								<l-form-item label="客户号码:" l-class="l-input-class" name="phone" rules="{{phoneRules}}">
+												<l-input id="ruleName" l-class="l-input-class" value="{{service.phone}}" hide-label show-row="{{false}}" />
+								</l-form-item>
+								<l-form-item label="服务地址:" name="address" rules="{{userAddress}}">
+												<l-input id="address" l-class="l-input-class" hide-label value="{{service.address}}" show-row="{{false}}" />
+								</l-form-item>
+								<l-form-item label="预约日期:" name="date">
+												<l-input id="date" l-class="l-input-class" hide-label show-row="{{false}}" bind:tap="showDate" disabled value="{{service.date}}">
+																<button class="date-btns" slot="right">选择日期</button>
+												</l-input>
+								</l-form-item>
+								<l-form-item label="上传图片:" l-form-content-class="l-input-class-imageContainer" name="up-image" label-slot label-placement="column">
+												<view class="image-container">
+																<text>点击上传图片(最多上传三张图片)</text>
+												</view>
+												<l-image-picker url="{{service.imgs}}" l-item-class="item" count="3" size="3" l-item-class="item" bind:linchange="onChangeTap"></l-image-picker>
+								</l-form-item>
+								<view slot="submit" class="submit">
+												<l-button size="large">提交</l-button>
+								</view>
+				</l-form>
+				<s-service-introduce></s-service-introduce>
+</view>
+<l-popup show="{{flag}}" content-align="bottom">
+				<s-date-picker bind:dataPicker="onDate" bind:closeDate="onCloseDate"></s-date-picker>
+</l-popup>
+<l-toast></l-toast>

@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "s-comment": "../comment/index",
+    "l-toast": "/miniprogram_npm/lin-ui/toast/index"
+
+  },
+  "navigationBarTitleText": "搜旧"
+}

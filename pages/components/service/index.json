@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "s-my-banner-card": "../my-banner-card/index",
+    "s-select":"../select/index"
+  }
+}

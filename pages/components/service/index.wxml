@@ -1,0 +1,15 @@
+<view class="container">
+    <image src="../../image/backimg.jpg" class="topImg" />
+    <view class="search-container">
+        <text>选择服务</text>
+        <s-select prop-array='{{selectArray}}' bind:myget='getData'></s-select>
+    </view>
+    <view class="service-text">
+        <text>服务项目</text>
+    </view>
+    <view class="servers">
+        <block wx:for="{{itemsArray}}" wx:key="index">
+            <s-my-banner-card data-pid="{{item.id}}" item="{{item}}" bind:tap="goToDetail"></s-my-banner-card>
+        </block>
+    </view>
+</view>

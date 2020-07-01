@@ -1,0 +1,9 @@
+{
+  "name": "miniprogram-9",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "lin-ui": "^0.8.1"
+  }
+}

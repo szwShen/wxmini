@@ -1,0 +1,12 @@
+<view class="container">
+    <s-my-banner coupon-count="{{couponCount}}"></s-my-banner>
+    <view class="main-container">
+        <s-my-order-panel></s-my-order-panel>
+        <view class="list">
+            <l-list bind:lintap="onGotoMyOrder" icon="order1" l-icon-class="sleeve-order" l-class-content="list-item" title="全部订单"></l-list>
+            <l-list bind:lintap="onGotoMyCoupon" icon="coupon" l-icon-class="sleeve-coupon" l-class-content="list-item" title="积分"></l-list>
+            <l-list bind:lintap="onMgrAddress" icon="address2" l-icon-class="sleeve-address" l-class-content="list-item" title="地址"></l-list>
+             <l-list bind:lintap="onFreeTell" icon="customer-service" l-icon-class="sleeve-customer-service" l-class-content="list-item" title="客服"></l-list>
+        </view>
+    </view>
+</view>

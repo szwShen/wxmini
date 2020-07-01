@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "s-service": "../components/service/index",
+    "s-home": "../components/home/index",
+    "s-my": "../components/my/index"
+
+
+  }
+}

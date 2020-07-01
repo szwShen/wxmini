@@ -1,0 +1,47 @@
+<view class="container">
+				<view class="header">
+								<swiper autoplay="{{true}}" indicator-dots="{{true}}" circular="{{true}}">
+												<swiper-item>
+																<image src="../../image/backimg.jpg" />
+																<text class="head-text">将闲置交给我们,把环保留给地球</text>
+												</swiper-item>
+												<swiper-item>
+																<image src="../../image/backimg.jpg" />
+																<text class="head-text">将闲置交给我们,把环保留给地球</text>
+												</swiper-item>
+												<swiper-item>
+																<image src="../../image/backimg.jpg" />
+																<text class="head-text">将闲置交给我们,把环保留给地球</text>
+												</swiper-item>
+								</swiper>
+				</view>
+				<view class="content">
+								<view class="title">一键预约</view>
+								<l-form name="user" l-form-container-class="l-form-container-class" bind:linsubmit="submit">
+												<l-form-item label="姓名:" name="userName" label-width="140rpx">
+																<l-input required="{{true}}" l-class="l-input-class" id="userName" placeholder="请输入用户名" value="{{user.name}}" rules="{{nameRule}}" hide-label show-row="{{false}}" />
+												</l-form-item>
+												<l-form-item label="联系方式:" name="phoneNumber" label-width="140rpx">
+																<l-input l-class="l-input-class" id="phoneNumber" required="{{true}}" value="{{user.phone}}" placeholder="请输入联系方式" rules="{{phoneRule}}" type="number" hide-label show-row="{{false}}" />
+												</l-form-item>
+												<l-form-item label="地址:" name="userAddress" label-width="140rpx">
+																<l-input l-class="l-input-class" id="userAddress" placeholder="请输入地址" value="{{user.address}}" rules="{{addressRule}}" hide-label show-row="{{false}}" />
+												</l-form-item>
+												<view slot="submit">
+																<l-button size="large">提交</l-button>
+												</view>
+								</l-form>
+				</view>
+				<view class="about-us">
+								<view class="title">关于我们</view>
+								<text>
+												无锡家电回收地处无锡新区。自成立以来，一直秉承“诚信、专业、服务”作为经营理念。在上海设有仓库， 只需你一个电话，其余事情我们来做，免费清理一条龙服务。凭良好的经营信誉。以上海及周边地区部分厂商建立了长期的合作关系。随着业务的不断发展和壮大。合作伙伴的范围也在进一步扩大，在互惠互利的原则下， 我们热忱的期待与您的合作，共同为环保事业贡献力量！我们将竭诚为各企事业单位提供快速、高效、热情、周到的服务，希望我们能成为您最可信赖的合作伙伴！无锡家电回收有限公司欢迎您的来电，当你们"喜新厌旧”的时候,别忘了提醒我们一声,当你们:弃旧迎新的时候,别忘了告诉我们一声, 我们会给你们提供一些真诚的建议, 也许不是最宝贵的,但一定是最实惠的 ,当那些为你们服务N年的电子,电器 ,废旧物资等产品光荣下岗的时候 ,我们会为它们安排一个最完美的归宿, 让它们再最后一次为你们奉献出最大的价值 .请联系我 我将上门为您提供回收服务！！！
+								</text>
+								<a class="moreInf" bind:tap="onGotoQiYeDetail">&mdash;查看更多</a>
+				</view>
+				<view class="comment">
+								<s-comment></s-comment>
+				</view>
+				<text class="bottom">Copyright © 2017-2018 JIADIANHUISHOU.</text>
+</view>
+<l-toast></l-toast>

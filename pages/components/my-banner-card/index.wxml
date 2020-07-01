@@ -1,0 +1,15 @@
+<view class="container">
+				<view class="inner-container">
+								<view class="img-container">
+												<image src="../../image/backimg.jpg" />
+								</view>
+								<view>
+												<text>{{item.text}}</text>
+								</view>
+								<view>
+												<l-button size="long" width="500" height="80" shape="circle" plain="{{true}}">
+																立即预约
+												</l-button>
+								</view>
+				</view>
+</view>

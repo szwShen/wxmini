@@ -1,0 +1,44 @@
+.msg-box {
+  padding: 20px;
+}
+
+.send-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.msg-info {
+  display: block;
+  margin: 10px 0 0 0;
+  color: #3363bc;
+}
+
+.place-input {
+  color: salmon;
+}
+
+.list-view {
+  margin: 20px 0 0 0;
+}
+
+.item {
+  overflow: hidden;
+  border-bottom: 1px dashed #ccc;
+  height: 30px;
+  line-height: 30px;
+}
+
+.text1 {
+  float: left;
+}
+
+.close-btn {
+  float: right;
+  margin: 5px 5px 0 0;
+}

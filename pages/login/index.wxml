@@ -1,0 +1,56 @@
+
+<view class='back' style='height:{{height}}rpx'>
+    <image class='backimg' src='../image/backimg.jpg'></image>
+   
+</view>
+<view class="container">
+  <image class='title-img' src='../image/backimg.jpg'></image>
+
+<div class="form">
+<form bindsubmit="formSubmit" bindreset="formReset">
+			<div class="register">
+				<div class="userdiv">
+
+					<div class="userp2">
+            <image class='shouji' src='../image/logTel.png'></image>
+          <input type="text" name="phone" id="phone" placeholder="请输入手机号" maxlength='11' value="" placeholder-class='placeholderStyle' bindinput ="phoneInput"/> 
+				
+					</div>
+
+					<div class="userp2">
+            <image class='xinxi' src='../image/logXi.png'></image> 
+              <input type="text" name="yanzm" id="yanzm" placeholder="请输入验证码"
+              value="{{yanz}}" placeholder-class='placeholderStyle' bindinput ="yanzInput"/>
+                <div class="yanzm">
+                    <span bindtap='eyoux' class="yanz {{clicked ? '':'hidden'}}" >获取验证码</span>
+                    <span class="yanztime {{clicked ? 'hidden':''}}" >{{ytimes}}s</span>
+                </div>
+           </div>
+
+				</div>
+			</div>
+
+			<!-- submit -->
+      <view class='nextbtn'>
+      <button  formType="submit" open-type="getUserInfo" plain='true'>登录</button>
+</view>
+      </form>
+		</div>
+
+</view>	
+
+<view class='line'>
+ <text space='nbsp'>——————  第三方登录  ——————</text>
+</view>
+
+
+
+<view class='weixin'>
+<button wx-if='{{showStatus}}' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" plain='true'>
+<image src='../image/weixin.png'></image></button>
+      <button wx-if='{{!showStatus}}' open-type='getPhoneNumber'  bindgetphonenumber='bindgetPhone' plain='true' data-statu="close"><image src='../image/weixin.png'></image> </button>
+</view>
+
+
+
+
